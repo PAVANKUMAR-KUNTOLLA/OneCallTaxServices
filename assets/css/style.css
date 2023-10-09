@@ -2189,6 +2189,8 @@ button > span,
   border-left-color: #000;
 }
 
+
+
 /* Preloader */
 .preloader {
   position: fixed;
@@ -2369,6 +2371,14 @@ button > span,
   vertical-align: top;
 }
 
+@media (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px (adjust as needed) */
+  .login-btn {
+      margin-top: -50px; /* Move the toggle button 10px from the top */
+  }
+}
+
+
 .onovo-logo:hover {
   text-decoration: none;
 }
@@ -2391,6 +2401,12 @@ button > span,
 .header--white .logo--large {
   color: #fff;
 }
+
+/* Add this CSS rule to hide the elements with the 'hidden' class */
+.hide-on-menu-open {
+  display: block; /* Change 'block' to 'none' to hide */
+}
+
 
 .onovo-logo-image {
   position: relative;
@@ -5943,7 +5959,7 @@ ul.onovo-footer-menu li {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 380px;
+  height: 200px;
   text-align: center;
   line-height: 1;
 }
@@ -7968,4 +7984,36 @@ body div.wpforms-container .wpforms-form button.onovo-btn[type=submit],
   background-color: #D8FF36;
 }
 
+/* my custom styles  */
+
+.refer-image {
+  background-size: 100% 100% !important;
+}
+
+.appbar_end{
+  flex-wrap: nowrap !important;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .refer-section {
+      background-image: url(../images/refer_banner_mobile.jpg) !important;
+  }
+}
+
+.refer-social{
+  margin-top: 400px;
+  @media (max-width: 768px) {
+    margin-top: 700px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+.contact-form {
+  display: none;
+}
+}
 /* --options end */
